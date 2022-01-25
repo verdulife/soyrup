@@ -1,5 +1,8 @@
 <script>
+  import Slider from "$lib/Slider.svelte";
+
   import { ui } from "$content/home";
+  import { diseno_grafico } from "$content/diseno-grafico";
 </script>
 
 <svelte:head>
@@ -17,7 +20,7 @@
   </section>
 
   <section id="diseno_grafico">
-    <h1>DISEÑO GRÁFICO</h1>
+    <Slider data={diseno_grafico} />
   </section>
 </div>
 
