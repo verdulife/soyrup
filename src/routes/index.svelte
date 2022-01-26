@@ -2,7 +2,9 @@
   import Slider from "$lib/Slider.svelte";
 
   import { ui } from "$content/home";
-  import { diseno_grafico } from "$content/diseno-grafico";
+  import { diseno_grafico } from "$content/diseno_grafico";
+  import { diseno_web } from "$content/diseno_web";
+  import { motion_graphics } from "$content/motion_graphics";
 </script>
 
 <svelte:head>
@@ -22,9 +24,21 @@
   <section id="diseno_grafico">
     <Slider data={diseno_grafico} />
   </section>
+
+  <section id="diseno_web">
+    <Slider data={diseno_web} />
+  </section>
+
+  <section id="motion_graphics">
+    <Slider data={motion_graphics} />
+  </section>
 </div>
 
 <style lang="scss">
+  section {
+    margin-bottom: 60px;
+  }
+
   .header {
     height: calc(100vh - 120px);
     text-align: center;
