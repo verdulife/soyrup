@@ -25,5 +25,9 @@
 
   .view {
     height: calc(100% - 120px);
+    
+    @media (max-width: $mobile) {
+      height: calc(100% - 80px);
+    }
   }
 </style>

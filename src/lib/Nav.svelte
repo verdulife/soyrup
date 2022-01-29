@@ -5,15 +5,13 @@
 
 <nav class="row jbetween acenter xfill">
   <a href="/" class="row acenter">
-    <p class="logo"><b>RUP</b> | PORTFOLIO</p>
+    <strong class="logo"><b>RUP</b> | PORTFOLIO</strong>
   </a>
 
   <ul class="desktop-menu row yfill">
     {#each ui.routes as { slug, title }}
       <li class="yfill" class:active={$page.url.pathname === slug}>
-        <a href={slug} class="row nowrap acenter fill">
-          <p>{title}</p>
-        </a>
+        <a href={slug} class="row nowrap acenter fill">{title}</a>
       </li>
     {/each}
   </ul>
@@ -26,13 +24,21 @@
     padding: 0 40px;
 
     @media (max-width: $mobile) {
+      height: 80px;
       padding: 0 20px;
+      justify-content: center;
     }
   }
 
   .logo {
     font-size: 18px;
     color: $sec;
+  }
+
+  ul {
+    @media (max-width: $mobile) {
+      display: none;
+    }
   }
 
   li {

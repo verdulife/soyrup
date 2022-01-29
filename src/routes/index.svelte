@@ -1,5 +1,6 @@
 <script>
   import Slider from "$lib/Slider.svelte";
+  import Contact from "$lib/Contact.svelte";
 
   import { ui } from "$content/home";
   import { diseno_grafico } from "$content/diseno_grafico";
@@ -32,11 +33,19 @@
   <section id="motion_graphics">
     <Slider data={motion_graphics} />
   </section>
+
+  <section id="contacto">
+    <Contact />
+  </section>
 </div>
 
 <style lang="scss">
   section {
     margin-bottom: 60px;
+    
+    @media (max-width: $mobile) {
+      margin-bottom: 20px;
+    }
   }
 
   .header {
@@ -44,6 +53,11 @@
     text-align: center;
     color: $white;
     padding: 80px;
+
+    @media (max-width: $mobile) {
+      height: calc(100vh - 80px);
+      padding: 20px;
+    }
 
     small {
       font-size: 70px;
@@ -56,6 +70,10 @@
       font-size: 170px;
       line-height: 1;
       margin-bottom: 40px;
+
+      @media (max-width: $mobile) {
+        font-size: 80px;
+      }
     }
 
     p {
@@ -67,6 +85,14 @@
 
       small {
         font-size: 18px;
+      }
+
+      @media (max-width: $mobile) {
+        font-size: 16px;
+
+        small {
+          font-size: 14px;
+        }
       }
     }
 

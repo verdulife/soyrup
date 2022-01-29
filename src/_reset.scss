@@ -55,8 +55,10 @@ body,
 input,
 textarea,
 select,
-option {
+option,
+button {
   font-family: "integral-cf", "Segoe UI Emoji", sans-serif;
+  letter-spacing: 1px;
 }
 
 input,
@@ -64,10 +66,13 @@ textarea,
 select,
 option,
 p {
+  font-family: "Lora", "Segoe UI Emoji", serif;
+  letter-spacing: inherit;
   font-weight: lighter;
 }
 
 strong {
+  font-weight: normal;
   color: $pri;
 }
 
