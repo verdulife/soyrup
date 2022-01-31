@@ -24,7 +24,7 @@
   }
 
   .scroll {
-    background: url("../dots.svg") no-repeat center;
+    background: url("./dots.svg") no-repeat center;
     background-size: cover;
   }
 </style>
