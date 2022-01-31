@@ -1,9 +1,5 @@
 export const ui = {
   pretitle: "Hola",
   title: "Soy Rup",
-  description: /* html */ `
-    Diseñador <strong>Gráfico</strong>, <strong>Web</strong> y realizador de videos <strong>Motion Graphics</strong>.
-    <br> 
-    <small>Aquí abajo encontrarás una recopilación de proyectos.</small>
-  `,
+  description: "Soy un desarrollador web, apasionado por la tecnología y la programación.",
 }

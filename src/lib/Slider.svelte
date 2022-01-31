@@ -96,6 +96,8 @@
   }
 
   .slider {
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
     padding: 0 20px;
 
     @media (max-width: $mobile) {
@@ -110,6 +112,7 @@
     height: calc(var(--card-width) / 1.618);
     max-width: var(--max-card-width);
     max-height: calc(var(--max-card-width) / 1.618);
+    scroll-snap-align: center;
     padding: 20px 10px;
 
     @media (max-width: $mobile) {

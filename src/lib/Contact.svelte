@@ -52,7 +52,7 @@
     </div>
 
     <div class="row xfill jcenter">
-      <button class="pri">{ui.button_send}</button>
+      <button class="pri semi">{ui.button_send}</button>
     </div>
   </form>
 </div>
@@ -89,7 +89,7 @@
     color: $sec;
     font-size: 12px;
     padding-left: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   input,
@@ -107,11 +107,7 @@
   }
 
   button {
-    color: $white;
-    border-radius: 16px;
-
-    @media (max-width: $mobile) {
-      width: 70%;
-    }
+    width: 70%;
+    max-width: 200px;
   }
 </style>

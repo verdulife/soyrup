@@ -8,7 +8,7 @@
 <main>
   <Nav />
 
-  <div class="view fill">
+  <div class="scroll fill">
     <slot />
   </div>
 </main>
@@ -23,11 +23,8 @@
     }
   }
 
-  .view {
-    height: calc(100% - 120px);
-    
-    @media (max-width: $mobile) {
-      height: calc(100% - 80px);
-    }
+  .scroll {
+    background: url("../dots.svg") no-repeat center;
+    background-size: cover;
   }
 </style>
