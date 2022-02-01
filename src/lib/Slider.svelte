@@ -1,6 +1,6 @@
 <script>
   export let data;
-  const { projects } = data;
+  const { slug, title, projects } = data;
 
   let sliderElement;
   let showLeft = false;
@@ -27,7 +27,7 @@
 </script>
 
 <div class="slider-wrapper row xfill">
-  <h2>{data.title}</h2>
+  <h2>{title}</h2>
   {#if showLeft}
     <div class="arrow-left row acenter yfill" on:click={() => slideLeft(sliderElement)}>
       <img src="./arrow-left.svg" alt="Left" />
@@ -37,9 +37,11 @@
   <ul class="slider xfill" bind:this={sliderElement}>
     {#each projects as project}
       <li class="slide">
-        <div class="card col jend fill">
-          <h3>{project.title}</h3>
-        </div>
+        <a class="fill" href="{slug}{project.slug}">
+          <div class="card col jend fill">
+            <h3>{project.title}</h3>
+          </div>
+        </a>
       </li>
     {/each}
   </ul>
@@ -117,6 +119,10 @@
 
     @media (max-width: $mobile) {
       padding: 10px;
+    }
+
+    a {
+      color: unset;
     }
   }
 
