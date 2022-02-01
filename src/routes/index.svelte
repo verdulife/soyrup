@@ -14,6 +14,9 @@
 </svelte:head>
 
 <section class="view header col fcenter xfill">
+  <div class="video-wrapper">
+    <video src="./reel.mp4" playsinline autoplay loop muted />
+  </div>
   <small>{ui.pretitle}</small>
   <h1>{ui.title}</h1>
 
@@ -44,7 +47,7 @@
   section {
     padding-top: 120px;
     margin-bottom: -60px;
-    
+
     @media (max-width: $mobile) {
       padding-top: 80px;
       margin-bottom: -80px;
@@ -52,12 +55,35 @@
   }
 
   .header {
+    position: relative;
     text-align: center;
     color: $white;
     padding: 80px;
-    
+
     @media (max-width: $mobile) {
       padding: 20px;
+    }
+
+    *:not(.video-wrapper) {
+      z-index: 1;
+    }
+
+    .video-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      opacity: 0.1;
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        mix-blend-mode: multiply;
+      }
     }
 
     small {

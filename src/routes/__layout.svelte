@@ -24,7 +24,36 @@
   }
 
   .scroll {
-    background: url("../../../dots.svg") no-repeat center;
-    background-size: cover;
+    background: url("../../../dots.svg") no-repeat;
+    background-position: top left;
+    background-size: 150%;
+    animation: moveBg 20s ease infinite alternate;
+  }
+
+  @keyframes moveBg {
+    0% {
+      background-position: top left;
+      background-size: 150%;
+    }
+    20% {
+      background-position: bottom right;
+      background-size: 200%;
+    }
+    40% {
+      background-position: center;
+      background-size: 150%;
+    }
+    60% {
+      background-position: center;
+      background-size: 500%;
+    }
+    80% {
+      background-position: center;
+      background-size: 200%;
+    }
+    100% {
+      background-position: top left;
+      background-size: 150%;
+    }
   }
 </style>
