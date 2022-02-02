@@ -19,7 +19,7 @@
 
 <nav class="bottom-nav xfill">
   <ul class="mobile-menu row nowrap fill">
-    {#each ui.routes as { slug, title, icon, icon_reverse }}
+    {#each ui.routes as { slug, title, icon }}
       <li class="row yfill">
         <a href={slug} class="row fcenter fill">
           <img src={icon} alt={title} />
@@ -39,7 +39,7 @@
     width: calc(100% - 40px);
     max-width: 1200px;
     height: 80px;
-    background: rgba($black, 0.1);
+    background: rgba($black, 0.3);
     backdrop-filter: blur(10px);
     letter-spacing: 0.15em;
     border-radius: 16px;
@@ -98,7 +98,7 @@
     max-width: 1200px;
     height: 75px;
     display: none;
-    background: rgba($black, 0.1);
+    background: rgba($black, 0.3);
     backdrop-filter: blur(10px);
     letter-spacing: 0.15em;
     box-shadow: inset 0 1px 2px -1px rgba($white, 0.4), inset 0 -1px 2px -1px rgba($black, 0.4);

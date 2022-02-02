@@ -1,27 +1,7 @@
 <script>
-  import { onMount } from "svelte";
-  import smoothscroll from "smoothscroll-polyfill";
   import "$fonts/integral.css";
   import "$fonts/operator.css";
   import Nav from "$lib/Nav.svelte";
-
-  onMount(() => {
-    smoothscroll.polyfill();
-
-    const anchors = document.querySelectorAll("a[href^='#']");
-
-    anchors.forEach((anchor) => {
-      anchor.addEventListener("click", (e) => {
-        e.preventDefault();
-        const href = anchor.getAttribute("href");
-        const target = document.querySelector(href);
-        target.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      });
-    });
-  });
 </script>
 
 <main>
