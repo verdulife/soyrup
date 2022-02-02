@@ -45,7 +45,7 @@
     padding-top: 120px;
     margin-bottom: -60px;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       padding-top: 80px;
       margin-bottom: -80px;
     }
@@ -56,7 +56,7 @@
     color: $white;
     padding: 80px;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       padding: 20px;
     }
 
@@ -66,7 +66,7 @@
       margin-bottom: -30px;
       letter-spacing: 5px;
 
-      @media (max-width: $mobile) {
+      @media (max-width: $tablet) {
         font-size: 24px;
         margin-bottom: -10px;
       }
@@ -77,7 +77,7 @@
       line-height: 1;
       margin-bottom: 40px;
 
-      @media (max-width: $mobile) {
+      @media (max-width: $tablet) {
         font-size: 60px;
         margin-bottom: 30px;
       }
@@ -90,7 +90,7 @@
       color: $sec;
       margin-bottom: 40px;
 
-      @media (max-width: $mobile) {
+      @media (max-width: $tablet) {
         font-size: 16px;
       }
     }

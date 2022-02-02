@@ -1,6 +1,6 @@
 export const motion_graphics = {
   slug: "/motion_graphics",
-  title: "Diseño gráfico",
+  title: "Motion graphics",
   projects: [
     {
       slug: "/tapasbar_china",

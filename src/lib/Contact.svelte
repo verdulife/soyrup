@@ -61,7 +61,7 @@
   .content {
     padding: 60px;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       padding: 20px;
     }
   }

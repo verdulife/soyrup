@@ -17,7 +17,7 @@
   </ul>
 </nav>
 
-<nav class="bottom-nav">
+<nav class="bottom-nav xfill">
   <ul class="mobile-menu row nowrap fill">
     {#each ui.routes as { slug, title, icon, icon_reverse }}
       <li class="row yfill">
@@ -47,7 +47,7 @@
     padding: 0 40px;
     z-index: 99;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       height: 60px;
       padding: 0 20px;
       justify-content: center;
@@ -58,13 +58,13 @@
     font-size: 18px;
     color: $sec;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       font-size: 14px;
     }
   }
 
   .desktop-menu {
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       display: none;
     }
   }
@@ -91,22 +91,20 @@
 
   .bottom-nav {
     position: fixed;
-    bottom: 20px;
+    bottom: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: calc(100% - 40px);
     max-width: 1200px;
-    height: 60px;
+    height: 75px;
     display: none;
     background: rgba($black, 0.1);
     backdrop-filter: blur(10px);
     letter-spacing: 0.15em;
-    border-radius: 16px;
-    box-shadow: inset 1px 1px 2px -1px rgba($white, 0.4), inset -1px -1px 2px -1px rgba($black, 0.4);
+    box-shadow: inset 0 1px 2px -1px rgba($white, 0.4), inset 0 -1px 2px -1px rgba($black, 0.4);
     z-index: 99;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       display: flex;
     }
 

@@ -67,7 +67,7 @@
       padding-left: 60px;
       color: $sec;
 
-      @media (max-width: $mobile) {
+      @media (max-width: $tablet) {
         padding-left: 30px;
       }
     }
@@ -102,7 +102,7 @@
     scroll-snap-type: x mandatory;
     padding: 0 20px;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       padding: 0 10px;
     }
   }
@@ -117,7 +117,7 @@
     scroll-snap-align: center;
     padding: 20px 10px;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       padding: 10px;
     }
 
