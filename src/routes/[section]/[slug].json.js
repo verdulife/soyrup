@@ -9,11 +9,14 @@ export async function get({ params }) {
   if (params.section === "diseno_web") data = diseno_web;
   if (params.section === "motion_graphics") data = motion_graphics;
 
-  const project = data.projects.filter(project => project.slug === params.slug)[0];
 
-  if (project) {
+  if (data) {
+    const current = data.projects.filter(project => project.slug === params.slug)[0];
+    const others = data.projects.filter(project => project.slug !== params.slug);
+    const projects = { current, others };
+
     return {
-      body: JSON.stringify(project),
+      body: JSON.stringify(projects),
     };
   }
 
