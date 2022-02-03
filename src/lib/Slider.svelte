@@ -37,7 +37,7 @@
   <ul class="slider xfill" bind:this={sliderElement}>
     {#each projects as project}
       <li class="slide">
-        <a class="fill" href="{slug}{project.slug}">
+        <a class="fill" href="/{slug}/{project.slug}">
           <div class="card col jend fill">
             <h3>{project.title}</h3>
           </div>

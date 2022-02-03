@@ -1,4 +1,5 @@
 export const ui = {
-  title: "Hola verdu",
-  description: "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  title: "Página no encontrada",
+  description: "La página que estás buscando no existe o ha sido movida.",
+  button: "Volver al inicio",
 }

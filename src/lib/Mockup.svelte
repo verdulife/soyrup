@@ -1,5 +1,13 @@
 <script>
-  export let project;
+  export let data;
 </script>
 
-<h1>{project.title} - {project.section} - Mockup</h1>
+<div class="col fcenter fill">
+  <h1>{data.section} / {data.project.title} - Mockup</h1>
+</div>
+
+<style lang="scss">
+  h1 {
+    color: $sec;
+  }
+</style>
