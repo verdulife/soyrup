@@ -32,6 +32,10 @@
     padding: 40px;
     margin-bottom: 100px;
 
+    @media (max-width: $tablet) {
+      margin-bottom: 20px;
+    }
+
     .mockup {
       position: absolute;
       top: 40px;
@@ -43,6 +47,10 @@
       height: 100%;
       object-fit: contain;
       object-position: center;
+
+      @media (max-width: $tablet) {
+        top: 25px;
+      }
     }
 
     img,

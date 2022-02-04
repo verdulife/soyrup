@@ -15,10 +15,13 @@
     li {
       --card-width: calc(40vw - 20px);
       --max-card-width: 600px;
+      --min-card-width: 270px;
       width: var(--card-width);
-      height: calc(var(--card-width) / 1.618);
       max-width: var(--max-card-width);
+      min-width: var(--min-card-width);
+      height: calc(var(--card-width) / 1.618);
       max-height: calc(var(--max-card-width) / 1.618);
+      min-height: calc(var(--min-card-width) / 1.618);
       background: $pri;
       border-radius: 16px;
       margin: 10px;

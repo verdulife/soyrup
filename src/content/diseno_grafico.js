@@ -9,7 +9,7 @@ export const diseno_grafico = {
       description: "Un proyecto de diseño gráfico para la empresa Tapasbar China.",
       image: "/diseno_grafico/preview.jpg",
       content: {
-        mockup: "/diseno_grafico/mockup.jpg",
+        mockup: "https://www.youtube.com/embed/uP_NGr3NhvI",
         images: [
           "/diseno_grafico/1.jpg",
           "/diseno_grafico/2.jpg",

@@ -19,19 +19,17 @@
 
   export let section, projects;
   const project = projects.current;
-
-  console.log(project);
 </script>
 
 <svelte:head>
-  <title>{project.title - section}</title>
+  <title>{project.title}</title>
 </svelte:head>
 
 <section class="current-project col acenter xfill">
   <h1>{project.title}</h1>
   <p>{project.description}</p>
 
-  <Mockup title={project.title} src={project.image} />
+  <Mockup title={project.title} src={project.content.mockup} />
   <Gallery title={project.title} images={project.content.images} />
 </section>
 
@@ -46,6 +44,7 @@
 
     @media (max-width: $tablet) {
       padding: 20px;
+      padding-top: 120px;
     }
 
     h1,
@@ -56,5 +55,6 @@
   }
 
   .other-projects {
+    padding-bottom: 120px;
   }
 </style>
