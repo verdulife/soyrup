@@ -62,7 +62,6 @@
         color: $sec;
       }
     }
-
   }
 
   .other-projects {

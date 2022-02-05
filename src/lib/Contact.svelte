@@ -11,15 +11,18 @@
     };
   }
 
-  function sendForm() {
-    const subject = `${form.name}<${form.email}> - Contacto web`;
-    const email_URL = `mailto:${ui.contact_email}?subject=${subject}&body=${form.message}"`;
-    const link = document.createElement("a");
-    link.href = email_URL;
-    link.target = "_blank";
+  async function sendForm() {
+    const req = await fetch("/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    });
 
-    link.click();
-    clearForm();
+    if (req.ok) {
+      clearForm();
+    }
   }
 </script>
 
@@ -46,7 +49,7 @@
       </div>
     </div>
 
-    <div class="input-wrapper xfill">
+    <div class="input-wrapper col xfill">
       <label for="input_message">{ui.input_message}</label>
       <textarea id="input_message" class="xfill" bind:value={form.message} placeholder={ui.input_message} required />
     </div>
@@ -88,17 +91,18 @@
   label {
     color: $sec;
     font-size: 12px;
-    padding-left: 15px;
-    margin-bottom: 10px;
+    padding: 0 0 10px 15px;
   }
 
   input,
   textarea {
     background: rgba($white, 5%);
+    backdrop-filter: blur(10px);
     color: $sec;
     font-weight: bold;
-    border-radius: 16px;
-    box-shadow: inset 0px 4px 4px rgba($black, 0.25);
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 4px -1px rgba($black, 0.4);
+    padding: 18px 24px;
   }
 
   textarea {
