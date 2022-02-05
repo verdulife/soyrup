@@ -12,6 +12,12 @@
 
 <style lang="scss">
   ul {
+    margin-top: 80px;
+
+    @media (max-width: $mobile) {
+      margin-top: 40px;
+    }
+
     li {
       --card-width: calc(40vw - 20px);
       --max-card-width: 600px;

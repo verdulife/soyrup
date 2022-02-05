@@ -26,15 +26,17 @@
 </svelte:head>
 
 <section class="current-project col acenter xfill">
-  <h1>{project.title}</h1>
-  <p>{project.description}</p>
+  <div class="title-wrapper col acenter xfill">
+    <h1>{project.title}</h1>
+    <p>{project.description}</p>
+  </div>
 
   <Mockup title={project.title} src={project.content.mockup} />
   <Gallery title={project.title} images={project.content.images} />
 </section>
 
 <section class="other-projects xfill">
-  <Others data={{ section, projects: projects.others }} />
+  <Others data={{ slug: section, projects: projects.others }} />
 </section>
 
 <style lang="scss">
@@ -47,11 +49,20 @@
       padding-top: 120px;
     }
 
-    h1,
-    p {
-      text-align: center;
-      color: $sec;
+    .title-wrapper {
+      margin-bottom: 80px;
+
+      @media (max-width: $mobile) {
+        margin-bottom: 40px;
+      }
+
+      h1,
+      p {
+        text-align: center;
+        color: $sec;
+      }
     }
+
   }
 
   .other-projects {

@@ -38,8 +38,8 @@
     {#each projects as project}
       <li class="slide">
         <a class="fill" href="/{slug}/{project.slug}">
-          <div class="card col jend fill">
-            <h3>{project.title}</h3>
+          <div class="card col jend fill" style="background-image: url({project.image})">
+            <h3 class="xfill">{project.title}</h3>
           </div>
         </a>
       </li>
@@ -127,8 +127,21 @@
   }
 
   .card {
-    background: $pri;
+    position: relative;
+    background-color: $pri;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 16px;
-    padding: 20px;
+    overflow: hidden;
+
+    h3 {
+      background: rgba($black, 0.2);
+      backdrop-filter: blur(10px);
+      color: $white;
+      line-height: 1;
+      box-shadow: inset 0 1px 2px -1px rgba($white, 0.6), 0 -10px 50px 0 rgba($black, 0.3);
+      padding: 20px 20px 25px 20px;
+    }
   }
 </style>

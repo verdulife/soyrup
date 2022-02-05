@@ -7,14 +7,14 @@ export const diseno_web = {
       date: "3/2/2022",
       title: "Tapasbar China",
       description: "Un proyecto de diseño gráfico para la empresa Tapasbar China.",
-      image: "/diseno_web/tapasbar-china-preview.jpg",
+      image: "/diseno_grafico/preview.jpg",
       content: {
-        mockup: "/diseno_web/tapasbar-china-mockup.jpg",
+        mockup: "/diseno_grafico/mockup.jpg",
         images: [
-          "/diseno_web/tapasbar-china-1.jpg",
-          "/diseno_web/tapasbar-china-2.jpg",
-          "/diseno_web/tapasbar-china-3.jpg",
-          "/diseno_web/tapasbar-china-4.jpg",
+          "/diseno_grafico/1.jpg",
+          "/diseno_grafico/2.jpg",
+          "/diseno_grafico/3.jpg",
+          "/diseno_grafico/4.jpg",
         ]
       }
     },
@@ -23,14 +23,14 @@ export const diseno_web = {
       date: "3/2/2022",
       title: "Quartz Elements",
       description: "Un proyecto de diseño gráfico para la empresa Quartz Elements.",
-      image: "/diseno_web/quartz-elements-preview.jpg",
+      image: "/diseno_grafico/preview.jpg",
       content: {
-        mockup: "/diseno_web/quartz-elements-mockup.jpg",
+        mockup: "/diseno_grafico/mockup.jpg",
         images: [
-          "/diseno_web/quartz-elements-1.jpg",
-          "/diseno_web/quartz-elements-2.jpg",
-          "/diseno_web/quartz-elements-3.jpg",
-          "/diseno_web/quartz-elements-4.jpg",
+          "/diseno_grafico/1.jpg",
+          "/diseno_grafico/2.jpg",
+          "/diseno_grafico/3.jpg",
+          "/diseno_grafico/4.jpg",
         ]
       }
     },
@@ -39,14 +39,14 @@ export const diseno_web = {
       date: "3/2/2022",
       title: "The Coffee House",
       description: "Un proyecto de diseño gráfico para la empresa The Coffee House.",
-      image: "/diseno_web/the-coffee-house-preview.jpg",
+      image: "/diseno_grafico/preview.jpg",
       content: {
-        mockup: "/diseno_web/the-coffee-house-mockup.jpg",
+        mockup: "/diseno_web/mockup.jpg",
         images: [
-          "/diseno_web/the-coffee-house-1.jpg",
-          "/diseno_web/the-coffee-house-2.jpg",
-          "/diseno_web/the-coffee-house-3.jpg",
-          "/diseno_web/the-coffee-house-4.jpg",
+          "/diseno_grafico/1.jpg",
+          "/diseno_grafico/2.jpg",
+          "/diseno_grafico/3.jpg",
+          "/diseno_grafico/4.jpg",
         ]
       }
     },
@@ -55,14 +55,14 @@ export const diseno_web = {
       date: "3/2/2022",
       title: "One More Time",
       description: "Un proyecto de diseño gráfico para la empresa One More Time.",
-      image: "/diseno_web/one-more-time-preview.jpg",
+      image: "/diseno_grafico/preview.jpg",
       content: {
-        mockup: "/diseno_web/one-more-time-mockup.jpg",
+        mockup: "/diseno_grafico/mockup.jpg",
         images: [
-          "/diseno_web/one-more-time-1.jpg",
-          "/diseno_web/one-more-time-2.jpg",
-          "/diseno_web/one-more-time-3.jpg",
-          "/diseno_web/one-more-time-4.jpg",
+          "/diseno_grafico/1.jpg",
+          "/diseno_grafico/2.jpg",
+          "/diseno_grafico/3.jpg",
+          "/diseno_grafico/4.jpg",
         ]
       }
     },
