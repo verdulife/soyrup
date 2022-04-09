@@ -1,5 +1,6 @@
 <script>
   import { ui } from "$content/contact";
+  import { lang } from "../stores";
 
   let form = {};
 
@@ -32,8 +33,8 @@
   <form class="col xfill" on:submit|preventDefault={sendForm}>
     <div class="dbl-input row jbetween xfill">
       <div class="input-wrapper col">
-        <label for="input_name">{ui.input_name}</label>
-        <input id="input_name" class="xfill" type="text" bind:value={form.name} placeholder={ui.input_name} required />
+        <label for="input_name">{ui.input_name[$lang]}</label>
+        <input id="input_name" class="xfill" type="text" bind:value={form.name} placeholder={ui.input_name[lang]} required />
       </div>
 
       <div class="input-wrapper col">
@@ -50,8 +51,8 @@
     </div>
 
     <div class="input-wrapper col xfill">
-      <label for="input_message">{ui.input_message}</label>
-      <textarea id="input_message" class="xfill" bind:value={form.message} placeholder={ui.input_message} required />
+      <label for="input_message">{ui.input_message[$lang]}</label>
+      <textarea id="input_message" class="xfill" bind:value={form.message} placeholder={ui.input_message[$lang]} required />
     </div>
 
     <div class="row xfill jcenter">

@@ -1,7 +1,17 @@
 <script>
   import "$fonts/integral.css";
   import "$fonts/operator.css";
+
+  import { onMount } from "svelte";
+  import { lang } from "../stores";
   import Nav from "$lib/Nav.svelte";
+
+  let userLang;
+
+  onMount(() => {
+    userLang = navigator.language || navigator.userLanguage;
+    $lang = userLang.startsWith("ca") ? "ca" : "es";
+  });
 </script>
 
 <main>
